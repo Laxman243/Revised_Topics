@@ -1,0 +1,41 @@
+<Doctype html>
+    <hmtl>
+        <head>
+            <title> JSON_FIRST </title>
+        </head>
+        <body>
+            <script = "text/ javascript">
+            // json object i.e json data , it stores data in key value pair 
+                
+              var Employee = { 
+                            "name" : "laxman",
+                            "city" : "Dewas",
+                            "phone" : 9703681540,
+                            "Address" : "Ram Nagar NX" 
+                            };
+            // Reads the JSON data , also we she differents ways of access the data 
+                            document.writeln("Original Data" + "<br>");
+                            document.writeln( "-----------------------" + "<br>");
+                            document.writeln(Employee.name + "<br>");
+                            document.writeln(Employee.city + "<br>"); 
+                            document.writeln(Employee["phone"] + "<br>");
+                            document.writeln(Employee["Address"] + "<br>"); 
+
+                            Employee.name = "Ved";
+                            Employee.phone = 9907053931;
+                            Employee.city = "Indore";
+                            Employee.Address = "Sanjay Nagar";
+
+                            document.writeln( "================================================" + "<br>");
+                            document.writeln("Modified Data" + " <br>");
+                            document.writeln( "------------------------" + "<br>");
+                             document.writeln(Employee.name + "<br>");
+                            document.writeln(Employee.city + "<br>"); 
+                            document.writeln(Employee["phone"] + "<br>");
+                            document.writeln(Employee["Address"] + "<br>"); 
+                                            
+                   // run the code to see the output
+            </script>
+        </body>
+
+    </hmtl>

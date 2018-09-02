@@ -1,0 +1,32 @@
+<Doctype html>
+    <html>
+        <body>
+            <script = "text/javascript">
+            
+            var obj = {
+                "colors" : ["green" , "red" , "blue"],
+                "Records" :   [
+                    { "name" : "laxman", "City" : "Dewas"},
+                   { "Phone" : 9097978, "State" : "MP"}
+
+                    ]
+            };
+            document.writeln("Access Array using for in loop" + "<br>");
+            
+            for (index in obj.colors)
+            {
+                document.writeln(obj.colors[index] + "<br>");
+            }
+            
+            document.writeln("Accessing another array using inner for loop " + "<br>");
+
+            for (key in obj.Records)
+                for(inner_key in obj.Records[key])
+                {
+                    document.writeln(obj.Records[key][inner_key] + "<br>");
+                }
+
+                
+            </script>
+        </body>
+    </html>

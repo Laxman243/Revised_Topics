@@ -1,0 +1,56 @@
+<Doctype html>
+    <html>
+        <body>
+            <script = text/javascript>
+            // How to check error --> open web page right click and go to inspect and check in console
+
+                    var obj = {
+
+                            "Name" : "Sourav", // "sourav";
+                            "City" : "Jharkhand",
+                            "Contact_No" : 12345679,
+                            "color" : ["orange", "green", "blue", "black"],
+                            "Condition" : true,
+                            // JSON key can also Conatins the JSON object
+
+                            "Friend" : {
+                                "Delhi" : "Amit",
+                                "Jharkhand" : "Sourav",
+                                "Noida" : "Laxman",
+                            }
+                    };
+                    // second object 
+                    var obj1 = {
+
+                        "salary" : 97000000,
+                        "Job" : "software engineer",
+                        "car" : "BMW" 
+
+                    };
+                    // now after making mistake try to print values
+
+                    document.writeln(obj.Name + "<br>");
+                    document.writeln(obj.City + "<br");
+                    document.writeln(obj.Contact_No + "<br>");
+                    document.writeln("=========== Access ===========" + "<br>");
+                    document.writeln("<br>");
+                    document.writeln(obj.Name + "<br>");
+                    document.writeln(obj.City + "<br>");
+                    document.writeln(obj.Contact_No + "<br>");
+                    document.writeln(obj.color[0] + " " + obj.color[1] + " " + obj.color[2] + " " + obj.color[3] + "<br");
+                    document.writeln(obj.Condition + "<br>");
+                    document.writeln(obj.Friend.Delhi + "<br>");
+                    document.writeln(obj.Friend.Jharkhand + "<br>");
+                    document.writeln(obj.Friend.Noida + "<br/>");
+                    // Accessing data through For in loop
+                    document.writeln("---------------------------------------------------------"+  "<br>");
+                    document.writeln("Access Json Values through for in loop"+  "<br>");
+                    document.writeln("--------------------------------------------------"+  "<br>");
+                    for (key in obj)
+                    {
+                        document.writeln(obj[key] + "<br>");
+                    }
+
+                </script>
+            </body>
+        </html>
